@@ -7,16 +7,11 @@ apk add --update npm && \
 git clone https://github.com/louislam/uptime-kuma.git 
 
 WORKDIR /uptime-kuma
-CMD ["/bin/sh"]
+RUN npm run setup && \
+npm install pm2 -g && pm2 install pm2-logrotate && \
+pm2 start server/server.js --name uptime-kuma
+
+CMD tail -f /dev/null
+
 
 EXPOSE 3001
-#,"npm install pm2 -g && pm2 install pm2-logrotate"]
-
-
-
-
-
-#FROM louislam/uptime-kuma:latest
-
-#VOLUME [ "app/data" ]
-#EXPOSE 3001
