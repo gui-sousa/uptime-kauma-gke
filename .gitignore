@@ -1,0 +1,13 @@
+plano.log
+gcp-dev.json
+gcp-prod.json
+gcp-dev-packer.json
+**/.terraform/*
+*.tfstate.lock.info
+crash.log
+crash.*.log
+.terraform.lock.hcl
+*.json:Zone.Identifier
+terraform.tfstate
+terraform.tfstate.backup
+log-pipeline.md
