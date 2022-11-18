@@ -16,9 +16,16 @@
         labels:
           app: "uptime-test"
       spec:
+        volumes: 
+          - name: uptime-pv-storage
+            persistentVolumeClaim:
+              claimName: uptime-pvc
         containers: 
         - name: "uptime-test-pod"
           image: "guisousa/uptime:3.1"
           ports:
           - containerPort: 3001
             protocol: TCP
+          volumeMounts:
+            - mountPath: "/uptime-kuma/data"
+              name: uptime-pv-storage

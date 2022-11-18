@@ -1,7 +1,5 @@
-plano.log
-gcp-dev.json
-gcp-prod.json
-gcp-dev-packer.json
+uptime-plano.log
+adfs-dev.json
 **/.terraform/*
 *.tfstate.lock.info
 crash.log
@@ -11,3 +9,4 @@ crash.*.log
 terraform.tfstate
 terraform.tfstate.backup
 log-pipeline.md
+/data
