@@ -11,3 +11,4 @@ terraform.tfstate.backup
 log-pipeline.md
 /data
 /uptime-kuma
+/dist
