@@ -17,7 +17,8 @@ npm run setup && \
 npm install pm2 -g && pm2 install pm2-logrotate && \
 tar -xvf dist.tar.gz && \
 rm -rf /root/.cache && \
-rm -rf public.tar.gz
+rm -rf public.tar.gz && \
+rm -rf dist.tar.gz
 
 CMD ["node", "server/server.js"]
 
