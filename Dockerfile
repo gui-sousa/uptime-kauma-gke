@@ -10,7 +10,7 @@ WORKDIR /uptime-kuma
 ADD https://github.com/gui-sousa/uptime-kauma-gke/raw/dev/dist.tar.gz ./
 ADD https://github.com/gui-sousa/uptime-kauma-gke/raw/dev/public.tar.gz ./
 #ADD https://github.com/gui-sousa/uptime-kauma-gke/raw/dev/src.tar.gz ./
-COPY Setup.vue /uptime-kuma/src/pages
+#COPY Setup.vue /uptime-kuma/src/pages
 COPY index.html .
 #RUN tar -xvf public.tar.gz 
 
